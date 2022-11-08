@@ -4,27 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -32,21 +13,21 @@
        <div class="app">
         <div class="row justify-content-center m-5">
             <h2 class="fw-bold mb-5 text-center">Inserisci i dati del tuo biglietto</h2>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <span class="fw-bold ">Inserisci il tuo Nome e Cognome</span> 
                 <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
                 <input type="text" class="form-control" id="userName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Inserisci il tuo nome e cognome">
               </div>
               </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <span class="fw-bold"> Inserisci i Km da percorrere</span> 
                 <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Km</span>
                 <input type="text" id="numeroKm" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Inserisci i Km da percorrere" >
               </div>
               </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <span class="fw-bold">Seleziona la tua fascia d'età</span> 
                 <select class="form-select" id="age" aria-label="Default select example">
                 <option selected>Scegli la tua fascia d'età</option>
@@ -54,33 +35,34 @@
                 <option value="over65">Over65</option>
                 <option value="altro">Altro</option>
               </select></div>
-              <div class="col-12 d-flex justify-content-center gap-5">
+              <div class="col-12 d-flex justify-content-center gap-5 my-3">
                 <button type="button" class="btn btn-success" id="mybtn">Genera</button>
                 <button type="button" class="btn btn-danger" id="offBtn">Reset Dati</button>
             </div> 
         </div>
         <!-- chisura row input -->
         <!-- apertura row output -->
-        <div class="row justify-content-center m-5 animate__animated animate__backInLeft" id="divOff">
+        <div class="row justify-content-center m-5 animate__animated animate__backInLeft gap-3" id="divOff">
             <h2 class="fw-bold mb-5 text-center">Ecco i dati del tuo biglietto</h2>
             <div class="col">
-                <h3>Nome e Cognome Passeggero</h3>
+                <h4 class="fw-bold">Nome e Cognome Passeggero</h4>
                 <span id="userNameOut" class="fw-bold fs-1 text-danger"></span>
             </div>
-            <div class="col-2">
-                <h3>Offerta</h3>
+            <div class="col-12 col-lg-2">
+                <h4 class="fw-bold">Offerta</h4>
                     <span id="offertaOut" class="fw-bold fs-1 text-danger"></span>
             </div> 
-            <div class="col-2">
-                <h3>Carrozza</h3>
+            <div class="col-12 col-lg-2">
+                <h4 class="fw-bold">Carrozza</h4>
                 <span id="carrozzaOut" class="fw-bold fs-1 text-danger"></span>
             </div> 
-            <div class="col-2">
-                <h3>Codice CP</h3>
+            <div class="col-12 col-lg-2">
+                <h4 class="fw-bold">Codice CP</h4>
                 <span id="codiceOut" class="fw-bold fs-1 text-danger"></span>
             </div>
-            <div class="col-2">
-                <H3>Costo Biglietto</H3>
+            <div class="col-12 col-lg-2">
+                <H4 class="fw-bold">Costo Biglietto</H4>
+                <span id="prezzointero" class="text-decoration-line-through text-danger fs-4"></span>
                 <span id="costoOut" class="fw-bold fs-1 text-success"></span>
             </div>
         </div>
