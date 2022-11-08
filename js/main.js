@@ -1,14 +1,12 @@
 const mybtn= document.getElementById("mybtn");
-const age=document.getElementById("age").value;
-const numeroKm=document.getElementById("numeroKm").value;
 const prezzo=2;
-const prezzointero=(numeroKm * prezzo).toFixed(2);
 
 
 mybtn.addEventListener("click",
 function(){
     const age=document.getElementById("age").value;
     const numeroKm=document.getElementById("numeroKm").value;
+    const prezzointero=(numeroKm * prezzo).toFixed(2);
 
 
     if (age < 17) {
