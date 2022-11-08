@@ -1,6 +1,22 @@
 const mybtn= document.getElementById("mybtn");
 const prezzo=2;
-
+const offBtn = document.getElementById("offBtn")
+offBtn.addEventListener("click",
+function seisicuro() {
+    let seisicuro = confirm("Sei sicuro di voler cancellare i dati del tuo biglietto?");
+    if (seisicuro) {
+        document.getElementById("numeroKm").value = "";
+        document.getElementById("userName").value = "";
+        document.getElementById("age").value = "";
+        document.getElementById("userNameOut").innerHTML="";
+        document.getElementById("offertaOut").innerHTML="";
+        document.getElementById("carrozzaOut").innerHTML="";
+        document.getElementById("codiceOut").innerHTML="";
+        document.getElementById("costoOut").innerHTML="";
+    } else {
+      alert("Azione annullata");
+    }
+  })
 
 mybtn.addEventListener("click",
 function(){
@@ -8,9 +24,9 @@ function(){
     const age=document.getElementById("age").value;
     const numeroKm=document.getElementById("numeroKm").value;
     const prezzointero=(numeroKm * prezzo).toFixed(2);
-    var element = document.getElementById("divOff");
-    element.classList.add("active");
-    console.log(element)
+    var open = document.getElementById("divOff");
+    open.classList.add("active");
+    
 
 
     if (age == "minore") {
