@@ -44,8 +44,8 @@ function(){
         // Escluso ZERO
 
         document.getElementById("codiceOut").innerHTML=Math.floor(Math.random() * 1000000) + 1;
-        document.getElementById("prezzointero").innerHTML=`${prezzointero}`
-        document.getElementById("costoOut").innerHTML=`${costo}`;
+        document.getElementById("prezzointero").innerHTML=`${prezzointero}€`
+        document.getElementById("costoOut").innerHTML=`${costo}€`;
       
     }
     else if ( age == "over65"){
@@ -61,9 +61,9 @@ function(){
         innerHTML=Math.floor(Math.random() * 10) + 1;
 
         // ESCLUSO ZERO
-        document.getElementById("prezzointero").innerHTML=`${prezzointero}`;
+        document.getElementById("prezzointero").innerHTML=`${prezzointero}€`;
         document.getElementById("codiceOut").innerHTML=Math.floor(Math.random() * 1000000);
-        document.getElementById("costoOut").innerHTML=`${costo}`;
+        document.getElementById("costoOut").innerHTML=`${costo}€`;
        
     }
     else{
@@ -79,7 +79,7 @@ function(){
 
         // Escluso Zero
         document.getElementById("codiceOut").innerHTML=Math.floor(Math.random() * 1000000);
-        document.getElementById("costoOut").innerHTML=`${prezzointero}`;
+        document.getElementById("costoOut").innerHTML=`${prezzointero}€`;
         
     }
    
