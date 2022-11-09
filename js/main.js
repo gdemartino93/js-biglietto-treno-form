@@ -1,5 +1,5 @@
 const mybtn= document.getElementById("mybtn");
-const prezzo=2;
+const prezzo=0.21;
 const offBtn = document.getElementById("offBtn")
 offBtn.addEventListener("click",
 function seisicuro() {
